@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8" />
+    <title>Add Piza</title>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" />
+</head>
+
+<body>	
+    <div id="container">
+	<div id="top">
+	    <div id="topLeft">
+		<a href="javascript:pizza.saveNew(function() {
+		    window.location = 'index.html'
+		})">Done</a>
+	    </div>
+	    
+	    <div id="topMiddle">
+		Add Pizza
+	    </div>
+
+	    <div id="topRight"></div>
+	</div>
+	<div id="body" style="text-align: center;">
+	    <br><br><br><br>   
+	    <button id="addPizza" onClick="pizza.add()">
+		<img src="static/img/pizza.png" style="width:50%"/>
+	    </button>
+	</div>
+    </div>
+</body>
+</html>
