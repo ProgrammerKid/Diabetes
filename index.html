@@ -14,6 +14,27 @@
 	    <div id="topMiddle">Home</div>
 	    <div id="topRight"><a href="addPizza.html">+</a></div>
 	</div>
+	<script>
+	    function runOnLoad() {
+		document.getElementById("numOfPizza").innerHTML = localStorage.getItem("pEaten");
+		document.getElementById("progressBar").style.backgroundColor = "gray";
+		document.getElementById("progress").style.backgroundColor = "red";
+		document.getElementById("progressBar").style.width = "100%";
+		document.getElementById("progress").style.widht = localStorage.getItem("pEaten") + "%";
+	    }
+	</script>
+	<div id="body" style="text-align: center;">
+	    <br><br><br>
+	    <div id="numOfPizza">
+		0
+	    </div>
+	    <div id="progressBar">
+		<div id="progress">
+
+		</div>
+	    </div>
+	</div>
     </div>
+    <script>runOnLoad()</script>
 </body>
 </html>
